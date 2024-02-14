@@ -1,8 +1,8 @@
 from fastapi import APIRouter, HTTPException, Depends
 from odmantic import ObjectId
-from ..database.client import engine
-from ..models.user import UserIn, UserPatchScheme, UserOut
-from ..dependencies.authorization import get_password_hash
+from database.client import engine
+from models.user import UserIn, UserPatchScheme, UserOut
+from dependencies.authorization import get_password_hash
 
 user_routes = APIRouter()
 

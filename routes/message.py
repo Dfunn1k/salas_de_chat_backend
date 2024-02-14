@@ -1,6 +1,6 @@
 from fastapi import APIRouter
-from ..database.client import engine
-from ..models.message import Message
+from database.client import engine
+from models.message import Message
 from odmantic import ObjectId
 message_routes = APIRouter()
 
